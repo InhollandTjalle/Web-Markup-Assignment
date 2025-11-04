@@ -1,0 +1,162 @@
+.header {
+  background-color: #00112E;
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #00112E;
+  letter-spacing: 0.3px;
+  text-indent: 0;
+  word-spacing: normal;
+}
+
+.nav__bar {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  background-color: hsl(218, 100%, 9%);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  top: 0;
+}
+
+ul li a {
+  color: white;
+  padding: 16px 18px;
+  text-decoration: none;
+  display: block;
+  right: 10px;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: #002360;
+  border: white 1px solid;
+}
+
+ul li a:hover {
+  background-color: #575757;
+}
+
+.titel {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.intro {
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    background-color: #2E518C;
+    display: flex;
+    align-items: center;
+}
+
+.paragraaf {
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    background-color: #2E518C;
+    display: flex;
+    flex-direction: column;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 1rem;
+}
+
+.img2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 1rem;
+}
+
+.img3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 1rem;
+}
+
+footer {
+  background-color: #002360;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav__bar {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0.5rem;
+    align-items: stretch;
+  }
+
+  .nav__bar li a,
+  ul li a {
+    padding: 10px 12px;
+    text-align: center;
+  }
+
+  .intro,
+  .paragraaf {
+    width: calc(100% - 2rem);
+    margin: 0.6rem auto;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+  }
+
+  .fotos {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.4rem 0;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    width: 100%;
+    max-width: 320px;
+    padding: 0.6rem;
+    margin: 0.4rem auto;
+    float: none;
+    display: block;
+  }
+
+  .titel { padding: 0.6rem 0; }
+
+  footer { padding: 0.8rem; }
+}

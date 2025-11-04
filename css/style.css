@@ -1,0 +1,171 @@
+.header {
+  background-color: #00112E;
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #00112E;
+  letter-spacing: 0.3px;
+  text-indent: 0;
+  word-spacing: normal;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  background-color: hsl(218, 100%, 9%);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  top: 0;
+}
+
+ul li a {
+  color: white;
+  padding: 16px 18px;
+  text-decoration: none;
+  display: block;
+  right: 10px;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: #002360;
+  border: white;
+  border-width: 1px;
+  border-style: solid;
+}
+
+ul li a:hover {
+  background-color: #575757;
+}
+
+.img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: auto;
+}
+
+.intro {
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: auto;
+}
+
+.text {
+  width: 30%;
+  margin: auto;
+  background-color: #2E518C;
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin-left: 250px;
+  flex-direction: row;
+}
+
+.line {
+  border: 2px solid #00112E;
+  margin: 20px 0;
+  display: flex;
+}
+
+.img3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: auto;
+  float: left;
+}
+
+.img4 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: auto;
+}
+
+.white {
+  color: #2E518C;
+}
+
+footer {
+  background-color: #002360;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0.25rem;
+    align-items: stretch;
+  }
+
+  ul li a {
+    padding: 10px 12px;
+    text-align: center;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    margin: 0.5rem auto;
+    float: none;
+    display: block;
+  }
+
+  .text {
+    width: calc(100% - 2rem);
+    margin: 0.6rem auto;
+    background-color: #2E518C;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+
+  .line {
+    margin: 12px 0;
+  }
+
+  .intro {
+    width: calc(100% - 2rem);
+    margin: 0.6rem auto;
+    padding: 0.6rem;
+    box-sizing: border-box;
+  }
+
+  footer {
+    padding: 0.8rem;
+  }
+}

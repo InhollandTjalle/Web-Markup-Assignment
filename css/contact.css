@@ -1,0 +1,264 @@
+.header {
+  background-color: #00112E;
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #00112E;
+  letter-spacing: 0.3px;
+  text-indent: 0;
+  word-spacing: normal;
+}
+
+.nav__bar {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  background-color: hsl(218, 100%, 9%);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  top: 0;
+}
+
+ul li a {
+  color: white;
+  padding: 16px 18px;
+  text-decoration: none;
+  display: block;
+  right: 10px;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: #002360;
+}
+
+ul li a:hover {
+  background-color: #575757;
+}
+
+.titel {
+    color: white;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.top {
+    max-width: fit-content;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.img1 {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    height: auto;
+}
+
+.img2 {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    height: auto;
+}
+
+.middel {
+    max-width: 740px;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.img3 {
+    display: block;
+    margin: auto;
+    max-width: 150px;
+    height: auto;
+}
+
+.contact-type-legend fieldset {
+    max-width: 680px;
+    margin: 0.6rem auto;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid white;
+    background: #002360;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact-form {
+  max-width: 680px;
+  margin: 1rem auto;
+  background: #2E518c;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 3px double white;
+}
+
+.contact-form label {
+    display: block;
+    margin: 0.6rem 0 0.25rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #002360;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #2b8aef;
+  border-color: #2b8aef;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 0.75rem;
+}
+
+.contact-form button {
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  border: 0;
+  background: #2b8aef;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contact-form button[type="reset"] {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.contact-form button:hover {
+  background: #1a6ed8;
+}
+
+@media (max-width: 768px) {
+  body { padding: 0.6rem; }
+
+  .nav__bar {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0.25rem 0;
+    align-items: stretch;
+  }
+  .nav__bar a { 
+  padding: 10px 12px;
+  text-align: center;
+}
+
+  .top {
+    width: calc(100% - 1.2rem);
+    padding: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    border-radius: 8px;
+  }
+
+  .img1, .img2 {
+    max-width: 260px;
+    width: 100%;
+    margin: 0.4rem auto;
+  }
+
+  .middel {
+    width: calc(100% - 1.2rem);
+    padding: 0.8rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+
+  .img3 {
+    max-width: 220px;
+    width: 100%;
+    margin: 0.4rem auto;
+  }
+
+.contact-type-legend fieldset {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+    padding: 0.6rem;
+    width: calc(100% - 2rem);
+  }
+
+  .contact-form {
+    width: calc(100% - 2rem);
+    margin: 0.6rem auto;
+    padding: 0.8rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: stretch;
+  }
+  .form-actions button {
+    width: 100%;
+  }
+
+  footer {
+    padding: 0.8rem;
+  }
+}
+
+footer {
+  background-color: #002360;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}

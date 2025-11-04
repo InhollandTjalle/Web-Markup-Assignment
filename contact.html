@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <nav>
+        <ul class="nav__bar">
+          <li><img src="img/logo.png" alt="Logo" class="logo" /></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="alternatieven.html">Alternatieven</a></li>
+          <li><a href="waarom.html">Waarom</a></li>
+          <li><a href="locaties.html">Locaties</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2 class="titel">Contact</h2>
+      </section>
+      <section class="top">
+        <img src="img/contact.png" alt="Verschillende social media" class="img1" />
+        <section aria-labelledby="contact-type-legend">
+          <fieldset>
+            <legend id="contact-type-legend">Benaderende persoon</legend>
+            <label>
+              <input type="radio" name="contactType" value="vraag" checked />Midnight Snacker</label>
+            <label>
+              <input type="radio" name="contactType" value="feedback" />Midnight Dealer</label>
+          </fieldset>
+        </section>
+        <img src="img/Vork.png" alt="Vork met menu" class="img2" />
+      </section>
+      <section class="middel">
+        <section aria-labelledby="contact-legend">
+          <form class="contact-form" action="#" method="post" novalidate>
+            <fieldset>
+              <legend id="contact-legend">Contactformulier</legend>
+              <label for="name">Naam *</label>
+              <input id="name" name="name" type="text" placeholder="Voor- en achternaam" required />
+              <label for="email">E‑mail *</label>
+              <input id="email" name="email" type="email" placeholder="naam@voorbeeld.nl" required />
+              <label for="subject">Onderwerp *</label>
+              <input id="subject" name="subject" type="text" placeholder="Onderwerp" required />
+              <label for="message">Bericht *</label>
+              <textarea id="message" name="message" rows="6" placeholder="Schrijf uw bericht hier..." required></textarea>
+              <p class="form-actions">
+                <button type="reset">Reset</button>
+                <button type="submit">Verstuur</button>
+              </p>
+            </fieldset>
+         </form>
+        </section>
+        <img src="img/Pizzapunt.png" alt="Bellende pizzapunt" class="img3" />
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Midnight Snackers</p>
+    </footer>
+  </body>
+</html>
