@@ -19,7 +19,7 @@
   word-spacing: normal;
 }
 
-.nav__bar {
+ul {
   list-style-type: none;
   margin: auto;
   padding: 0;
@@ -44,6 +44,7 @@ ul li a {
 
 .active {
   background-color: #002360;
+  border: white 1px solid;
 }
 
 ul li a:hover {
