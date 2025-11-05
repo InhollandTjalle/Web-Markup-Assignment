@@ -22,7 +22,7 @@ nav {
   word-spacing: normal;
 }
 
-ul {
+.nav__bar {
   list-style-type: none;
   margin: auto;
   padding: 0;
@@ -94,6 +94,7 @@ ul li a:hover {
     text-align: left;
     width: 40%;
     margin: auto;
+    align-items: center;
 }
 
 .img1,
@@ -123,6 +124,15 @@ footer {
 }
 
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 0.25rem;
+  }
   .nav__bar {
     flex-direction: column;
     gap: 6px;

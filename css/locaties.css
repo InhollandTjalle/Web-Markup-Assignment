@@ -119,6 +119,16 @@ footer {
 }
 
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 0.25rem;
+  }
+
   .nav__bar {
     flex-direction: column;
     gap: 8px;
