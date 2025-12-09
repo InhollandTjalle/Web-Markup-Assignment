@@ -5,11 +5,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
 }
 
 .logo {
   width: 50px;
   height: auto;
+  
+}
+
+h2::first-letter {
+  color:white
 }
 
 .body {
@@ -121,6 +127,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+  z-index: 9999;
 }
 
 @media (max-width: 768px) {
